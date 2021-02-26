@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="calculator.css" >
+        <title>Tip Calculator</title>
+    </head>
+    <body>
+        
+        <div id="container">
+            <h1>Tip Calculator</h1>
+            <div id="calculator">
+          
+          
+              <form>
+                <p>How much was your bill?
+                  <p>
+                    Rs <input id="billamt" type="text" placeholder="Bill Amount">
+          
+                    <p>How was your service?
+                      <p>
+                        <select id="serviceQual">
+                      <option disabled selected value="0">Choose an Option</option>
+                      <option value="0.3">20&#37; &#45; Excellent</option>
+                      <option value="0.2">10&#37; &#45; Medium</option>
+                      <option value="0.15">5&#37; &#45; Not so Good</option>
+                     
+                  </select>
+          
+              </form>
+              <p>How many people are sharing the bill?</p>
+              <input id="peopleamt" type="text" placeholder="Number of People"> 
+              <button type="button" id="calculate">Calculate!</button>
+          
+            </div>
+            <!--calculator end-->
+            <div id="totalTip">
+              <sup>Rs</sup><span id="tip">00</span>
+              <small id="each">Each</small>
+            </div>
+            <!--totalTip end-->
+          
+          </div>
+          <!--container end-->
+
+        <script src="./calculator.js"></script>
+     
+    </body>
+</html>
